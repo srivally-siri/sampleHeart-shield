@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stroke Shield | Risk Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Risk Assessment Quiz</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="symptoms.html">Symptoms</a>
+    <a href="precautions.html">Precautions</a>
+    <a href="tracker.html">Health Tracker</a>
+    <a href="quiz.html">Risk Quiz</a>
+    <a href="emergency.html">Emergency</a>
+  </nav>
+</header>
+
+<section>
+  <form id="quizForm">
+    <label>Do you smoke?</label>
+    <select id="smoke">
+      <option value="0">No</option>
+      <option value="2">Yes</option>
+    </select><br>
+
+    <label>Do you exercise regularly?</label>
+    <select id="exercise">
+      <option value="0">Yes</option>
+      <option value="1">No</option>
+    </select><br>
+
+    <label>Do you have high BP or sugar?</label>
+    <select id="bpSugar">
+      <option value="0">No</option>
+      <option value="2">Yes</option>
+    </select><br>
+
+    <label>Family history of stroke?</label>
+    <select id="history">
+      <option value="0">No</option>
+      <option value="2">Yes</option>
+    </select><br>
+
+    <button type="submit">Check Risk</button>
+  </form>
+
+  <div id="quizResult"></div>
+</section>
+
+<footer>Know your risk and stay safe 💪</footer>
+</body>
+</html>

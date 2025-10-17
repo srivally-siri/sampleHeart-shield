@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stroke Shield | Health Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Health Tracker</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="symptoms.html">Symptoms</a>
+    <a href="precautions.html">Precautions</a>
+    <a href="tracker.html">Health Tracker</a>
+    <a href="quiz.html">Risk Quiz</a>
+    <a href="emergency.html">Emergency</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Track Your Health</h2>
+  <form id="trackerForm">
+    <label>Blood Pressure (mmHg):</label>
+    <input type="number" id="bp" required><br>
+
+    <label>Blood Sugar (mg/dL):</label>
+    <input type="number" id="sugar" required><br>
+
+    <label>Heart Rate (BPM):</label>
+    <input type="number" id="pulse" required><br>
+
+    <label>Sleep Hours:</label>
+    <input type="number" id="sleep" required><br>
+
+    <button type="submit">Save Data</button>
+  </form>
+
+  <div id="result" style="margin-top:15px;"></div>
+
+  <canvas id="healthChart" width="400" height="200" style="margin-top:30px;"></canvas>
+</section>
+
+<footer>Monitor your health regularly for prevention ✅</footer>
+</body>
+</html>
